@@ -33,6 +33,8 @@ jobs:
     - name: Installing Steam
       run: start-process SteamSetup.exe /S
      
-    - name: Open Steam
-      run: Steam
-    
+    - name: Starting Idle Master
+      run: |
+       dir
+       start-process ~\Desktop\idle\idle_master_extended_v1.7\IdleMasterExtended.exe
+       
