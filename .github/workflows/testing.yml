@@ -12,20 +12,19 @@ jobs:
       run: Invoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
     - name: Extract
       run: Expand-Archive ngrok.zip
-
-    - name: Lets go to the Desktop Boi
-      run: cd ~\Desktop\
       
     - name: Lets Download Idle Master Extended
       run: Invoke-WebRequest https://github.com/JonasNilson/idle_master_extended/releases/download/v1.7/idle_master_extended_v1.7.zip -OutFile idle.zip
       
-    - name: Checking DIR
-      run: dir
-      
     - name: Unzipping Idle master Extended
       run: Expand-Archive idle.zip
-      
-    - name: Again Checking DIR
+    
+    - name: Moving IDLE to Desktop
+      run: |
+       Move-Item D:\a\testing\testing\idle ~\Desktop\
+       cd ~\Desktop\
+       
+    - name: Checking Desktop for IDLE
       run: dir
   
     
