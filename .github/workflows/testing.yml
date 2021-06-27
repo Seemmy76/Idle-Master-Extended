@@ -33,5 +33,6 @@ jobs:
     - name: Installing Steam
       run: start-process SteamSetup.exe /S
      
-  
+    - name: Open Steam
+      run: Steam
     
