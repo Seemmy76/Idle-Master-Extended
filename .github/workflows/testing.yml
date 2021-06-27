@@ -19,15 +19,11 @@ jobs:
     - name: Unzipping Idle master Extended
       run: Expand-Archive idle.zip
     
-    - name: Moving IDLE to Desktop
+    - name: Moving IDLE to Desktop and checking it
       run: |
        Move-Item D:\a\testing\testing\idle ~\Desktop\
-       cd ~
-       
-       
-    - name: Checking Desktop for IDLE
-      run: |
-       cd Desktop
+       cd ~\Desktop\
        dir
+       
   
     
