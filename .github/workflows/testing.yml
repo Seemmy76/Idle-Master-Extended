@@ -24,8 +24,8 @@ jobs:
       
     - name: Moving Idle to Desktop
       run: |
-       Move-Item D:\a\Testing\Testing\idle ~
-       cd ~
+       Move-Item D:\a\Testing\Testing\idle ~\Desktop\
+       cd ~\Desktop\
        dir
   
     
