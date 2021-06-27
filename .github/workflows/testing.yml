@@ -23,6 +23,7 @@ jobs:
       run: |
        Move-Item D:\a\testing\testing\idle ~\Desktop\
        cd ~\Desktop\
+       dir
        
     - name: Checking Desktop for IDLE
       run: dir
