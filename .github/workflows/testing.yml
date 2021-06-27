@@ -18,4 +18,14 @@ jobs:
       
     - name: Checking DIR
       run: dir
+      
+    - name: Unzipping Idle master Extended
+      run: Expand-Archive idle.zip
+      
+    - name: Moving Idle to Desktop
+      run: |
+       Move-Item D:\a\Testing\Testing\idle ~
+       cd ~
+       dir
+  
     
