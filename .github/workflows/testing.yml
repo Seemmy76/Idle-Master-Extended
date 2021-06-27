@@ -27,7 +27,7 @@ jobs:
        
     - name: Download Steam
       run: |
-       Invoke-WebRequest https://cdn.cloudflare.steamstatic.com/client/installer/SteamSetup.exe ~\Desktop\
+       Invoke-WebRequest https://cdn.cloudflare.steamstatic.com/client/installer/SteamSetup.exe
        dir
      
   
