@@ -22,10 +22,12 @@ jobs:
     - name: Moving IDLE to Desktop
       run: |
        Move-Item D:\a\testing\testing\idle ~\Desktop\
-       cd ~\Desktop\
-       dir
+       cd ~
+       
        
     - name: Checking Desktop for IDLE
-      run: dir
+      run: |
+       cd Desktop
+       dir
   
     
