@@ -13,7 +13,10 @@ jobs:
     - name: Extract
       run: Expand-Archive ngrok.zip
 
-    - name: Downloading Idle Master Extended
+    - name: Lets go to the Desktop Boi
+      run: cd ~\Desktop\
+      
+    - name: Lets Download Idle Master Extended
       run: Invoke-WebRequest https://github.com/JonasNilson/idle_master_extended/releases/download/v1.7/idle_master_extended_v1.7.zip -OutFile idle.zip
       
     - name: Checking DIR
@@ -22,10 +25,7 @@ jobs:
     - name: Unzipping Idle master Extended
       run: Expand-Archive idle.zip
       
-    - name: Moving Idle to Desktop
-      run: |
-       Move-Item D:\a\Testing\Testing\idle ~\Desktop\
-       cd ~\Desktop\
-       dir
+    - name: Again Checking DIR
+      run: dir
   
     
