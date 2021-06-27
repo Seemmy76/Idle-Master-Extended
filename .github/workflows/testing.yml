@@ -25,5 +25,10 @@ jobs:
        cd ~\Desktop\
        dir
        
+    - name: Download Steam
+      run: |
+       Invoke-WebRequest https://cdn.cloudflare.steamstatic.com/client/installer/SteamSetup.exe ~\Desktop\
+       dir
+     
   
     
