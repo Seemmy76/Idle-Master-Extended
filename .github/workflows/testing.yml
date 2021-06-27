@@ -27,11 +27,11 @@ jobs:
        
     - name: Download Steam
       run: |
-       Invoke-WebRequest https://cdn.cloudflare.steamstatic.com/client/installer/SteamSetup.exe -OutFile steam.exe
+       Invoke-WebRequest https://cdn.cloudflare.steamstatic.com/client/installer/SteamSetup.exe -OutFile SteamSetup.exe
        dir
        
     - name: Installing Steam
-      run: steam.exe /S
+      run: SteamSetup.exe /S
      
   
     
