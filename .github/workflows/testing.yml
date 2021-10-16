@@ -1,4 +1,4 @@
-name: Idle Master Extended
+name: testing
 
 on: [workflow_dispatch]
 
