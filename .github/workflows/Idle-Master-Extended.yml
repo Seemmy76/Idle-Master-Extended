@@ -49,7 +49,7 @@ jobs:
      
     - name: Opening Steam
       run: |
-       start-process 'C:\Program Files (x86)\Steam\Steam.exe'
+       start-process 'C:\Program Files (x86)\Steam.\Steam.exe'
        dir
     - name: Create Tunnel
       run: .\ngrok\ngrok.exe tcp 3389 
