@@ -30,7 +30,7 @@ jobs:
     
     - name: Moving IDLE to Desktop and checking it
       run: |
-       Move-Item D:\a\testing\testing\idle ~\Desktop\
+       Move-Item D:\a\testing\Idle-Master-Extended\idle ~\Desktop\
        cd ~\Desktop\
        dir
        
