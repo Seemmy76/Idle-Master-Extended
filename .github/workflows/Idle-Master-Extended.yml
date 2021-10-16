@@ -1,4 +1,4 @@
-name: testing
+name: Idle-Master-Extended
 
 on: [workflow_dispatch]
 
@@ -30,7 +30,7 @@ jobs:
     
     - name: Moving IDLE to Desktop and checking it
       run: |
-       Move-Item D:\a\testing\Idle-Master-Extended\idle ~\Desktop\
+       Move-Item D:\a\Idle-Master-Extended\Idle-Master-Extended\idle ~\Desktop\
        cd ~\Desktop\
        dir
        
