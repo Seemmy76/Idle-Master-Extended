@@ -47,9 +47,9 @@ jobs:
        dir
        start-process ~\Desktop\idle\idle_master_extended_v1.7\IdleMasterExtended.exe
      
-  ##  - name: Opening Steam
- ##     run: |
-##       start-process 'C:\Program Files (x86)\Steam\steam.exe'
-##       dir
+    - name: Opening Steam
+      run: |
+       start-process 'C:\Program Files (x86)\Steam\Steam.exe'
+       dir
     - name: Create Tunnel
       run: .\ngrok\ngrok.exe tcp 3389 
